@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audreylyn Moraña - Modern CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style-utilities.css" />
+    <link rel="stylesheet" href="../styles/cv.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <a href="../index.html" class="back-button button-cv">
+      <i class="fas fa-chevron-left"></i>
+      <span>Go Back</span>
+    </a>
+    <section class="cv-container bg-white mt-lg" style="--mt-lg: 5rem">
+      <header class="header flow" data-spacing="md">
+        <h1 class="name fw-regular">AUDREYLYN MORAÑA</h1>
+        <div class="contact-header">
+          <ul class="contact-list-header">
+            <li>
+              <i class="fas fa-phone icon"></i>
+              <span>09201063627</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope icon"></i>
+              <span>audreylynmorana1504@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt icon"></i>
+              <span>Punturin, Valenzuela City</span>
+            </li>
+            <li>
+              <i class="fab fa-github icon"></i>
+              <span>github.com/audreylyn</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <div class="left-column">
+          <section class="flow section-spacing">
+            <h2 class="section-title fw-bold">OBJECTIVE</h2>
+            <p class="objective-text">
+              I am seeking an opportunity to gain hands-on experience and further
+              enhance my skills to support both my personal and professional
+              development. In return, I am committed to bringing dedication, a
+              strong work ethic, and a willingness to learn in order to contribute
+              meaningfully to your organization during my on-the-job training.
+            </p>
+          </section>
+
+          <section class="flow section-spacing">
+            <h2 class="section-title fw-bold">EDUCATION</h2>
+            <div class="experience-item">
+              <p class="experience-title">
+                VICENTE P. TRINIDAD NATIONAL HIGH SCHOOL
+              </p>
+              <p class="experience-company">TVL – Information and Communications Technology (ICT)</p>
+              <p class="experience-date">2020 – 2022</p>
+              <p class="experience-description">With Highest Honors</p>
+            </div>
+            <div class="experience-item">
+              <p class="experience-title">
+                PAMANTASAN NG LUNGSOD NG VALENZUELA
+              </p>
+              <p class="experience-company">Bachelor of Science in Information Technology</p>
+              <p class="experience-date">2022 – Present</p>
+              <p class="experience-description">Dean's Lister (All Semesters)</p>
+            </div>
+          </section>
+
+          <section class="flow section-spacing">
+            <h2 class="section-title fw-bold">SKILL</h2>
+            <h3 class="skill-category">TECHNICAL SKILLS</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-item-title">Front-end Technologies:</span> HTML, CSS, JavaScript, Bootstrap, Angular, Ionic
+              </li>
+              <li>
+                <span class="skill-item-title">Back-end Technologies:</span> PHP, MySQL, MSSQL, MongoDB
+              </li>
+              <li>
+                <span class="skill-item-title">Version Control:</span> Git
+              </li>
+              <li>
+                <span class="skill-item-title">Design Tools:</span> Figma, Canva
+              </li>
+              <li>
+                <span class="skill-item-title">Productivity Tools:</span> MS Office (Word, Excel, PowerPoint)
+              </li>
+            </ul>
+            <h3 class="skill-category">SOFT SKILLS</h3>
+            <ul class="skill-list">
+              <li>Problem-Solving</li>
+              <li>Critical Thinking</li>
+              <li>Attention to Detail</li>
+              <li>Adaptability</li>
+              <li>Collaboration & Teamwork</li>
+            </ul>
+          </section>
+
+          <section class="flow section-spacing">
+            <h2 class="section-title fw-bold">REFERENCE</h2>
+            <div class="reference-item">
+              <p class="fw-bold">KENMAR C. BERNARDINO</p>
+              <p>Chairperson, PLV-IT Department</p>
+              <p><i class="fas fa-envelope icon"></i> ceit.bernardino@gmail.com</p>
+            </div>
+            <div class="reference-item">
+              <p class="fw-bold">ENGR. ROBERTO F. GUINTO</p>
+              <p>OJT Coordinator</p>
+              <p><i class="fas fa-envelope icon"></i> robertguintofranco@gmail.com</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section class="flow section-spacing">
+            <h2 class="section-title fw-bold">PROJECTS</h2>
+            <div class="experience-item">
+              <h3 class="experience-title">MCiSmartSpace (Capstone Project)</h3>
+              <p class="experience-company">Technical Lead</p>
+              <p class="text-grey">
+                A web-based system for managing room reservations, equipment
+                tracking, and academic facility resources with role-based access for
+                students, teachers, administrators, and registrar staff.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">Webpal (Ionic Angular)</h3>
+              <p class="experience-company">Front End Lead</p>
+              <p class="text-grey">
+                Interactive educational app for beginners in web development.
+                Features user authentication (Firebase), video-based lessons,
+                bookmarks, and user profiles.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">Room Management Information System</h3>
+              <p class="experience-company">Full Stack</p>
+              <p class="text-grey">
+                Multi-auth system for student room requisition and admin approvals.
+                Features include database integration, secure login, and CRUD
+                operations.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">eBook Library Manager</h3>
+              <p class="experience-company">Technical Lead</p>
+              <p class="text-grey">
+                WinForms-based EPUB/PDF manager with category filters, PDF viewer,
+                and SQL Server integration.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">Document Upload System (Laravel)</h3>
+              <p class="experience-company">Front End Lead</p>
+              <p class="text-grey">
+                A web-based platform for academic institutions to manage, verify,
+                and track applicant document submissions. This repository contains
+                only the Document Upload module.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">ZenLeaf</h3>
+              <p class="experience-company">Front End Lead</p>
+              <p class="text-grey">
+                A modern web interface for an herbal products site with sleek UI,
+                animations, and responsive layout.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">Pfolio</h3>
+              <p class="experience-company">Front End Lead</p>
+              <p class="text-grey">
+                This project showcases my skills and projects in web development,
+                providing a comprehensive look at my work and achievements.
+              </p>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">
+                Space Travel (Front End Mentor Challenge)
+              </h3>
+              <p class="experience-company">Front End Lead</p>
+              <p class="text-grey">
+                A themed front-end design project using advanced HTML/CSS concepts
+                to simulate an interactive galactic travel experience.
+              </p>
+            </div>
+          </section>
+
+          <section class="flow section-spacing">
+            <h2 class="section-title fw-bold">COURSES & WORKSHOPS</h2>
+            <div class="experience-item">
+              <h3 class="experience-title">
+                The Complete Full-Stack Web Development Bootcamp – Dr. Angela Yu
+              </h3>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">
+                The Complete JavaScript Course 2025 – Jonas Schmedtmann
+              </h3>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">Emmet: Fast and Efficient Web Coding – LinkedIn Learning</h3>
+            </div>
+            <div class="experience-item">
+              <h3 class="experience-title">Basic Web Development Workshop – ZUITT</h3>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
